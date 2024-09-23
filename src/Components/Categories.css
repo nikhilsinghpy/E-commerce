@@ -1,0 +1,30 @@
+/* Categories.css */
+
+.category-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.icon.selected {
+  background-color: #007bff;
+  color: white;
+}

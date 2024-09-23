@@ -1,0 +1,185 @@
+/* LoginPage.css */
+
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.login-box {
+  background-color: #e9f1ff;
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9f1ff; /* Or any other desired background color or image */
+}
+
+.left-card {
+  background: linear-gradient(135deg, #ff7a18 0%, #ffcc2f 100%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: start;
+  max-width: 80%;
+}
+
+.text-content h1 {
+  font-size: 1.8rem;
+  display: contents;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.text-content p {
+  color: white;
+  margin-top: 10px;
+}
+
+.image-container img {
+  width: 60%;
+  height: 250px;
+  display: block; /* Ensure the image fits within the container */
+  margin: 0 40px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo-container h2{
+  margin-bottom: 20px;
+  display: contents;
+
+}
+
+.logo-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-icon h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color: #ff7a18;
+  text-decoration: none;
+}
+
+.login-btn {
+  padding: 15px;
+  background-color: #ff7a18;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.social-login {
+  margin-top: 20px;
+}
+
+.social-login p {
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  margin-right: 8px;
+}
+
+
+.signup {
+  margin-top: 20px;
+}
+
+.signup a {
+  color: #ff7a18;
+  text-decoration: none;
+}
+
+/* Ensure styles are responsive for mobile views */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-card {
+    max-width: 100%;
+  }
+}

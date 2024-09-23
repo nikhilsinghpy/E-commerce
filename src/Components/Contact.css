@@ -1,0 +1,291 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #e9f1ff;
+}
+
+.contact-info {
+  margin: 90px;
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.contact-info h1 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  /* Adjusted column width */
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  margin-top: 30px;
+  justify-content: start;
+  /* Optional: centers the grid items */
+}
+
+.company-logos img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.contact-form {
+  width: 28%;
+  background-color: white;
+  padding: 40px;
+  margin: 100px;
+  margin-right: 100px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: gray;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Wrap form fields on smaller screens */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #155ab6;
+}
+
+input::placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .company-logos {
+    grid-template-columns: repeat(3, 1fr);
+    /* 2 columns for smaller screens */
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 20px 0;
+    /* Adjust margins for smaller screens */
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    /* Stack form fields on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logos {
+    grid-template-columns: repeat(3, 1fr);
+    /* 1 column for very small screens */
+  }
+
+  .contact-info h1 {
+    font-size: 24px;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+}
+
+/* support */
+
+/* Support options section (Chat, Email, Help Center) */
+.support-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #f7f9fc;
+  padding: 40px 20px;
+  margin-top: 0px;
+}
+
+.support-option {
+  text-align: center;
+  background-color: #e9f1ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.support-option h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.support-option p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.support-option a {
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.support-option a:hover {
+  text-decoration: underline;
+}
+
+/* Support team section (team images in circular shape) */
+.support-team-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7f9fc;
+  margin-bottom: 50px;
+}
+
+.support-team-section h2 {
+  font-size: 32px;
+  color: black;
+  display: contents;
+}
+
+.support-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+  background-color: #e9f1ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.team-member img {
+  width: 120px;
+  /* Set the size of the image */
+  height: 120px;
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image covers the container without distortion */
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -60px;
+  /* Moves the image above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centers the image horizontally */
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  margin-top: 60px;
+  /* Adjusts text position to give space for the image */
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .support-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .support-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-team-section {
+    padding: 20px;
+  }
+
+  .support-options {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

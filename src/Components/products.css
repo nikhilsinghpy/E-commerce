@@ -1,0 +1,116 @@
+/* Product.css */
+
+
+.position-relative {
+  background-image: url('https://wallpaperaccess.com/full/2593105.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mycolors {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links a {
+    color: white;
+  }
+
+  .navbar-links-mobile {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar-search-cart {
+    display: none;
+  }
+}
+
+/* ProductCards.css */
+
+.flex {
+  display: flex
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 250px;
+  margin: 10px;
+  background-color: white;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #f5a623;
+}
+
+.product-reviews {
+  font-size: 12px;
+  color: #888;
+  margin-left: 5px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.2s;
+}
+
+.product-button:hover {
+  background-color: #ff3b2e;
+}
+
+
+.product-list {
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 20px;
+  padding: 20px;
+}

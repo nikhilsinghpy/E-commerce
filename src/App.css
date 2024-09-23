@@ -1,0 +1,12 @@
+/* Sidebar */
+.my-style{
+  float: left;
+  height:840px;
+  background-Color:#f1f1f1;
+}
+
+.sidebar-container{
+  width: 40%;
+  position: absolute;
+  left: 0;
+}
